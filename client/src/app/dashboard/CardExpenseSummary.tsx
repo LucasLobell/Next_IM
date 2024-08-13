@@ -64,8 +64,8 @@ import {
                   <PieChart>
                     <Pie
                       data={expenseCategories}
-                      innerRadius={40}
-                      outerRadius={50}
+                      innerRadius={45}
+                      outerRadius={55}
                       fill="#8884d8"
                       dataKey="value"
                       nameKey="name"
@@ -88,7 +88,7 @@ import {
                 </div>
               </div>
               {/* LABELS */}
-              <ul className="flex flex-col justify-around items-center xl:items-start py-5 gap-3">
+              <ul className="flex flex-col justify-around items-center xl:items-start py-5 gap-3 md:gap-5">
                 {expenseCategories.map((entry, index) => (
                   <li
                     key={`legend-${index}`}
@@ -107,7 +107,7 @@ import {
             <div>
               <hr />
               {expenseSummary && (
-                <div className="mt-3 flex justify-between items-center px-7 mb-4">
+                <div className="mt-2 flex justify-between items-center px-7 mb-4">
                   <div className="pt-2">
                     <p className="text-sm">
                       Average:{" "}
